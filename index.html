@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Natália Wrapped ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.section{
+height:100vh;
+width:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+text-align:center;
+position:relative;
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+h1{
+font-size:3rem;
+font-weight:800;
+margin-bottom:15px;
+}
+
+h2{
+font-size:2rem;
+font-weight:700;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.1rem;
+line-height:1.8;
+max-width:700px;
+}
+
+.photo{
+width:90%;
+max-width:420px;
+height:60vh;
+object-fit:cover;
+border-radius:25px;
+margin-bottom:25px;
+box-shadow:0 0 30px rgba(29,185,84,.3);
+}
+
+.start-btn{
+padding:16px 30px;
+border:none;
+border-radius:999px;
+background:#1DB954;
+color:white;
+font-size:1rem;
+font-weight:700;
+cursor:pointer;
+margin-top:30px;
+}
+
+.counter{
+font-size:4rem;
+font-weight:800;
+color:#1DB954;
+margin-bottom:10px;
+}
+
+.music-card{
+background:#111;
+padding:25px;
+border-radius:25px;
+width:90%;
+max-width:420px;
+box-shadow:0 0 25px rgba(29,185,84,.3);
+}
+
+.album{
+width:100%;
+height:280px;
+background:linear-gradient(135deg,#1DB954,#0b4d21);
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:5rem;
+margin-bottom:20px;
+}
+
+.bar{
+height:6px;
+background:#333;
+border-radius:999px;
+overflow:hidden;
+margin-top:20px;
+}
+
+.progress{
+height:100%;
+width:70%;
+background:#1DB954;
+animation:play 3s infinite alternate;
+}
+
+@keyframes play{
+from{width:15%;}
+to{width:95%;}
+}
+
+.rank{
+font-size:1.4rem;
+margin:12px 0;
+}
+
+.heart{
+font-size:5rem;
+animation:pulse 1.5s infinite;
+margin-top:20px;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.15);}
+100%{transform:scale(1);}
+}
+
+.small{
+font-size:.9rem;
+opacity:.8;
+margin-top:20px;
+}
+
+</style>
+</head>
+<body>
+
+<audio id="music" loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<section class="section">
+<div class="fade">
+
+<h1>NATÁLIA WRAPPED ❤️</h1>
+
+<p>
+Uma retrospectiva da nossa história
+</p>
+
+<p style="margin-top:10px;">
+07/04/2023 → Hoje
+</p>
+
+<button class="start-btn" onclick="startExperience()">
+❤️ Começar Nossa História
+</button>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<div class="counter" id="daysCounter"></div>
+
+<p>dias juntos ❤️</p>
+
+<br>
+
+<p>
+🏠 1 lar construído<br>
+🐶 Bandit + Charlotte<br>
+✨ Incontáveis memórias
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto1.jpg" class="photo">
+
+<h2>O começo de tudo ❤️</h2>
+
+<p>
+Nem imaginávamos quantas histórias,
+sonhos e memórias nasceriam a partir desse momento.
+</p>
+
+<br>
+
+<p>
+Essa foi a primeira foto de uma jornada
+que mudaria nossas vidas para sempre.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto2.jpg" class="photo">
+
+<h2>Nosso primeiro capítulo 💋</h2>
+
+<p>
+O primeiro beijo foi no estacionamento da academia.
+</p>
+
+<br>
+
+<p>
+Mas essa foto representa exatamente o que aconteceu depois:
+eu me apaixonando cada vez mais por você.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto3.jpg" class="photo">
+
+<h2>Família +1 🐶</h2>
+
+<p>31/10/2023</p>
+
+<br>
+
+<p>
+Bandit chegou para transformar nossa rotina.
+</p>
+
+<p>
+Nossa família ganhou mais quatro patas.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto4.jpg" class="photo">
+
+<h2>MVP do Relacionamento 🏆</h2>
+
+<p>
+Quando eu não estava bem,
+você esteve.
+</p>
+
+<br>
+
+<p>
+Seu apoio durante minha competição foi um daqueles momentos
+que jamais vou esquecer.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto5.jpg" class="photo">
+
+<h2>Melhores Versões 🌊</h2>
+
+<p>
+Entre treinos, metas e desafios,
+sempre encontramos uma forma de evoluir juntos.
+</p>
+
+<br>
+
+<p>
+Essa foto representa dedicação,
+disciplina e companheirismo.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto6.jpg" class="photo">
+
+<h2>Conquista Desbloqueada 🏠</h2>
+
+<p>
+Morar juntos.
+</p>
+
+<br>
+
+<p>
+O momento em que nossos planos
+viraram realidade.
+</p>
+
+<p>
+Nosso lar começou aqui.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto7.jpg" class="photo">
+
+<h2>Família +2 🐾</h2>
+
+<p>25/07/2025</p>
+
+<br>
+
+<p>
+Quando achávamos que nossa família estava completa...
+</p>
+
+<p>
+Charlotte chegou para provar que sempre cabe mais amor.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto8.jpg" class="photo">
+
+<h2>Minha Favorita ❤️</h2>
+
+<p>
+Não é a viagem mais importante.
+</p>
+
+<p>
+Não é a data mais marcante.
+</p>
+
+<p>
+Não é a foto perfeita.
+</p>
+
+<br>
+
+<p>
+Mas tem você.
+</p>
+
+<p>
+E isso já faz dela uma das minhas favoritas.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<h2>Qualidades mais admiradas</h2>
+
+<div class="rank">🥇 Determinação</div>
+<div class="rank">🥈 Fé</div>
+<div class="rank">🥉 Carinho</div>
+<div class="rank">❤️ Companheirismo</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<div class="music-card">
+
+<div class="album">🎵</div>
+
+<h2>Que Sorte a Nossa</h2>
+
+<p>Matheus & Kauan</p>
+
+<br>
+
+<p>
+Não sei se essa música foi feita para nós.
+</p>
+
+<p>
+Mas sempre que ela toca,
+eu lembro de você.
+</p>
+
+<div class="bar">
+<div class="progress"></div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="fade">
+
+<img src="foto8.jpg" class="photo">
+
+<h2>Sua principal conquista ❤️</h2>
+
+<p>
+Ser o amor da minha vida.
+</p>
+
+<br>
+
+<p>
+Mozão,
+</p>
+
+<p>
+Obrigado por cada momento,
+cada conselho,
+cada incentivo
+e cada sonho compartilhado.
+</p>
+
+<br>
+
+<p>
+Desde 07/04/2023 você transformou dias comuns
+em lembranças que vou guardar para sempre.
+</p>
+
+<br>
+
+<p>
+Obrigado por construir essa história comigo.
+</p>
+
+<br>
+
+<p>
+Se eu pudesse voltar no tempo e escolher novamente,
+escolheria você todas as vezes.
+</p>
+
+<br>
+
+<p>
+Feliz Dia dos Namorados ❤️
+</p>
+
+<p>
+Te amo.
+</p>
+
+<div class="heart">❤️</div>
+
+<div class="small" id="liveCounter"></div>
+
+</div>
+</section>
+
+<script>
+
+function startExperience(){
+
+document.getElementById('music').play();
+
+window.scrollTo({
+top:window.innerHeight,
+behavior:'smooth'
+});
+
+}
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+
+const startDate = new Date('2023-04-07');
+
+function updateCounters(){
+
+const now = new Date();
+
+const diff = now - startDate;
+
+const days = Math.floor(diff/(1000*60*60*24));
+const hours = Math.floor(diff/(1000*60*60));
+const minutes = Math.floor(diff/(1000*60));
+
+document.getElementById('daysCounter').innerText = days;
+
+document.getElementById('liveCounter').innerHTML =
+`
+${days} dias juntos ❤️<br>
+${hours.toLocaleString()} horas compartilhadas<br>
+${minutes.toLocaleString()} minutos de história
+`;
+
+}
+
+updateCounters();
+
+setInterval(updateCounters,60000);
+
+</script>
+
+</body>
+</html>
